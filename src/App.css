@@ -1,0 +1,180 @@
+:root 
+{
+    
+    --main-font-color: hsl(220, 100%, 90%);
+    --main-background-color: hsl(200, 80%, 10%);
+    --Header-font-color: hsl(220, 0%, 0%);
+    --Header-background-color: hsl(220, 100%, 90%);
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: var(--main-background-color);
+    color: var(--main-font-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 100vh;
+}
+
+div
+{
+    font-size: 1.1rem;
+}
+
+.app
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Footer , .Header
+{
+    width: 100%;
+    padding: 0.5em;
+    background-color: var(--Header-background-color);
+    color: var(--Header-font-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Footer
+{
+    justify-content: center;
+}
+
+.title
+{
+    font-size: 1.2em;
+    padding: 0.5em;
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav
+{
+    padding: 0.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.navItem
+{
+    padding: 0.5em;
+    color: var(--main-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PostRoute,.Home,.NewPost,.PostPage,.About,.Missing
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.ADD
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vmin;
+}
+
+.show
+{
+    width: 55vw;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.5em;
+    border: 0.1em solid;
+    margin: 0.1em;
+}
+
+.show_item
+{
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.1em solid;
+    border-radius: 0.5em;
+    margin: 0.1em;
+}
+
+.show_item_comp
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-font-color);
+    color: var(--main-background-color);
+    border-radius: 0.5em;
+    border: 0.2em solid;
+}
+
+.x
+{
+    width: 20%;
+    cursor: pointer;
+}
+
+.fin
+{
+    background-color: var(--main-background-color);
+    color: var(--main-font-color);
+    border-radius: 0.5em;
+    border: 0.2em solid ;
+    margin: 0.1em;
+    
+}
+
+.fin::placeholder 
+{ 
+    color: var(--main-font-color);
+}
+.ADDbtn
+{
+    
+    background-color: var(--main-font-color);
+    color: var(--main-background-color);
+    border-radius: 0.5em;
+    cursor: pointer;
+    padding: 0 0.4em;
+    margin: 0.3em;
+}
+
+
+
+
